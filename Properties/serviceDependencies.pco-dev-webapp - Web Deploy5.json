@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/pco-dev-apimanagement/apis/products",
+      "type": "apis.azure"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/demo1212/databases/product",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ProductContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

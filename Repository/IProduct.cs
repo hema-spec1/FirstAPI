@@ -11,7 +11,7 @@ namespace FirstAPI.Repository
         public List<Product> GetProducts();
         public Product GetProductById(int id);
         public Product AddNewProduct(Product p);
-        public void DeleteProduct(int p);
+        //public void DeleteProduct(int p);
         public Product UpdateProduct(int p,Product P);
         public bool ProductExists(int id);
         public bool checkquality(int id, int qty);
