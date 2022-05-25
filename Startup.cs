@@ -34,6 +34,7 @@ namespace FirstAPI
             //services.AddTransient<IProduct, ProdRepo>();
             services.AddScoped<IProduct,ProdRepo > ();
             services.AddScoped<IProvider,Prodprovider>();
+            
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

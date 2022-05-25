@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace FirstAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -24,6 +24,7 @@ namespace FirstAPI.Controllers
         }
 
         [HttpGet]
+        [Route("/")]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
