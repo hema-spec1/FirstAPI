@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/hema1212/databases/demo1",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ProductContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

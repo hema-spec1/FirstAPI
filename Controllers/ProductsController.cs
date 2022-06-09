@@ -69,14 +69,14 @@ namespace FirstAPI.Controllers
             return CreatedAtAction("GetProduct", new { id = product.PrId }, product);
         }
 
-        // DELETE: api/Products/5
-        //[HttpDelete("{id}")]
-        //public IActionResult DeleteProduct(int id)
-        //{
-        //    _prod.DeleteProduct(id);
-            
-        //    return NoContent();
-        //}
+        //DELETE: api/Products/5
+        [HttpDelete("{id}")]
+        public IActionResult DeleteProduct(int id)
+        {
+            _prod.DeleteProduct(id);
+
+            return NoContent();
+        }
         [Route("[action]/{id}/{qty}")]
         [HttpGet]
         public bool chy(int id, int qty)
